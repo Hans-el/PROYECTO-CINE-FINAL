@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body { 
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+hr {
+  border: 1px solid red;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 20px;
+  color: rgb(46, 13, 4);
+  margin-bottom: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: red;
+  color: aliceblue;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+  background-color: darkred;
+}
+
+/* Estilos responsivos */
+@media (max-width: 991px) {
+  .container {
+    padding: 15px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    font-size: 18px;
+  }
+}

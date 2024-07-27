@@ -1,0 +1,24 @@
+<app-navigation></app-navigation>
+<link rel="stylesheet" href="agregar-peliculas.component.css">
+<div class="container">
+  <h2>Agregar Nueva Película</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" [(ngModel)]="pelicula.titulo" name="titulo" required>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" [(ngModel)]="pelicula.descripcion" name="descripcion" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="genero">Género:</label>
+      <input type="text" id="genero" [(ngModel)]="pelicula.genero" name="genero" required>
+    </div>
+    <div class="form-group">
+      <label for="anio">Año:</label>
+      <input type="number" id="anio" [(ngModel)]="pelicula.anio" name="anio" required>
+    </div>
+    <button type="submit" class="btn">Agregar Película</button>
+  </form>
+</div>

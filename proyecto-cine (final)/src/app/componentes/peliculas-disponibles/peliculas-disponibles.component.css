@@ -1,0 +1,42 @@
+/* peliculas-disponibles.component.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.pelicula {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.imagen-pelicula {
+  max-width: 100%;
+  height: auto;
+  
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.btn-rentar {
+  background-color: #eb2e2e;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-rentar:hover {
+  background-color: #b40d98;
+}

@@ -1,0 +1,11 @@
+<app-navigation> </app-navigation>
+<!-- Contenido del componente Películas Disponibles -->
+<div class="container">
+    <h2>Películas Disponibles</h2>
+    <div *ngFor="let pelicula of peliculas" class="pelicula">
+      <img [src]="pelicula.imagen" alt="{{ pelicula.titulo }}" class="imagen-pelicula">
+      <h3>{{ pelicula.titulo }}</h3>
+      <p>{{ pelicula.descripcion }}</p>
+      <button (click)="rentarPelicula(pelicula)" class="btn-rentar">Más detalles </button>
+    </div>
+  </div>

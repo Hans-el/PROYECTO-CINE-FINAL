@@ -1,0 +1,18 @@
+<app-navigation></app-navigation>
+<!-- Contenido del componente Login -->
+<div class="container">
+  <h2>Rentar Películas</h2>
+  <hr>
+  <div class="movies">
+    <div class="box-container-1">
+      <div *ngFor="let pelicula of peliculas" class="box-1">
+        <div class="content">
+          <img [src]="pelicula.imagen" alt="{{ pelicula.titulo }}">
+          <h3>{{ pelicula.titulo }}</h3>
+          <p>{{ pelicula.descripcion }}</p>
+          <button class="btn-2" (click)="rentarPelicula(pelicula)">Rentar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

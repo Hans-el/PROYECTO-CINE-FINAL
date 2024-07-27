@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid red;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.movies {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-1 {
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: red;
+    font-size: 20px;
+    margin-top: 30px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: darkred;
+}
+
+@media (max-width:991px) {
+    .container {
+        padding: 30px;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+}
